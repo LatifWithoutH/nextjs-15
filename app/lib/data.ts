@@ -8,9 +8,10 @@ import {
   Revenue,
 } from "./definitions";
 import { formatCurrency } from "./utils";
+// app/lib/data.ts
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: "require" });
-
+export { sql };
 export async function fetchRevenue() {
   try {
     // Artificially delay a response for demo purposes.
