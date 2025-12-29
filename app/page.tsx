@@ -6,12 +6,12 @@ import { lusitana } from "@/app/ui/fonts";
 import Image from "next/image";
 import { Metadata } from "next";
 
-// ✅ Tambahkan metadata untuk halaman utama
-export const meta Metadata = {
+export const metadata: Metadata = {
   title: "Welcome",
   description:
     "Welcome to Acme. This is the example for the Next.js Learn Course, brought to you by Vercel.",
 };
+
 
 export default function Page() {
   return (
